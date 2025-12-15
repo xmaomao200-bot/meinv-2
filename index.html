@@ -85,6 +85,45 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
+/* ============= 语言切换 ============= */
+/* ============= 语言切换（更醒目） ============= */
+.lang-switch{
+    display:flex;
+    align-items:center;
+    gap:0;
+    border:1px solid rgba(255,255,255,.6);
+    border-radius:999px;
+    overflow:hidden;
+    background: rgba(255,255,255,.06);
+}
+
+.lang-item{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 14px;
+    font-size:13px;
+    letter-spacing:0.5px;
+    color:#fff;
+    opacity:.9;
+    text-decoration:none;
+    transition: .2s ease;
+}
+
+.lang-item:hover{
+    background: rgba(255,255,255,.14);
+}
+
+.lang-item.active{
+    background:#fff;
+    color:#000;
+    font-weight:700;
+    cursor:default;
+}
+
+.lang-divider{
+    display:none; /* 这一版不需要竖线 */
+}
 
         /* ============= 轮播图/横幅 ============= */
         .hero-banner {
@@ -159,6 +198,22 @@
             color: #000000;
             transform: translateY(-1px);
         }
+.hero-cta{
+    margin-top:22px;
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-btn-secondary{
+    background: rgba(255,255,255,0.02);
+}
+
+.hero-btn-secondary:hover{
+    background:#ffffff;
+    color:#000000;
+}
 
         /* ============= 卡片区域 ============= */
         .card-grid {
@@ -532,29 +587,34 @@
             <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN521 Logo">
         </div>
 
-        <nav class="nav-links">
-            <a href="#">首页</a>
-            <a href="#services">服务</a>
-            <a href="#team">技师风采</a>
-            <a href="https://mn521.com/">预约</a>
-            <a href="#contact">联系我们</a>
-        </nav>
+<div class="lang-switch">
+    <span class="lang-item active">中文</span>
+    <span class="lang-divider">|</span>
+    <a class="lang-item" href="https://en.mn588.com/">EN</a>
+</div>
+
     </div>
 </header>
 
 <section class="hero-banner">
     <div class="hero-overlay"></div>
     <div class="hero-inner">
-        <h1 class="hero-title-main">MN521</h1>
-        <h2 class="hero-title-sub">新山按摩 · 新山伴游 · 新山自由身 · 新加坡后花园优选</h2>
+        <h1 class="hero-title-main">MN521新山下水指南</h1>
+        <h2 class="hero-title-sub">真人实拍·信息透明·按摩 · 伴游 · 自由身 ·下水</h2>
 
         <!-- 进入按钮 + ICON（与 logo 同地址） -->
-        <div class="hero-cta">
-            <a href="https://mn521.com/" class="hero-btn">
-                <img class="hero-btn-icon" src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN521 Icon">
-                进入 MN521
-            </a>
-        </div>
+      <div class="hero-cta">
+    <a href="https://mn521.com/" class="hero-btn">
+        <img class="hero-btn-icon" src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN521 Icon">
+        马上就约
+    </a>
+
+    <a href="https://t.me/jbchuishui" class="hero-btn hero-btn-secondary" target="_blank" rel="noopener">
+        <img class="hero-btn-icon" src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN521 Icon">
+        加入讨论
+    </a>
+</div>
+
     </div>
 </section>
 
