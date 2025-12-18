@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 
-Content-signal: search=yes
-Content-signal: ai-train=no
-
+# Block AI training / data collection bots
 User-agent: GPTBot
 Disallow: /
 
@@ -22,4 +20,5 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-Sitemap: https://www.mn588.com/sitemap.xml
+# Sitemap
+Sitemap: https://mn588.com/sitemap.xml
