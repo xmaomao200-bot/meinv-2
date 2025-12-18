@@ -600,6 +600,89 @@
                 padding: 8px 16px;
             }
         }
+        /* =========================
+   长文阅读优化（核心）
+========================= */
+
+/* 覆盖 container 中心对齐问题，仅针对文章 */
+.faq-article,
+.guide-article {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* 文章整体卡片感 */
+.faq-article,
+.guide-article {
+    background: #0d0d0d;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 28px 26px;
+    margin-top: 20px;
+}
+
+/* 章节标题（H3） */
+.faq-article h3,
+.guide-article h3 {
+    font-size: 18px;
+    margin: 28px 0 12px;
+    padding-left: 12px;
+    border-left: 3px solid #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* 段落 */
+.faq-article p,
+.guide-article p {
+    margin: 0 0 14px;
+    color: #dddddd;
+}
+
+/* 图文排版 */
+.guide-image {
+    margin: 26px auto;
+    text-align: center;
+}
+
+.guide-image img {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.guide-image figcaption {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+/* FAQ 与 About 分隔 */
+#faq-article {
+    margin-bottom: 60px;
+}
+
+#about-guide {
+    margin-top: 60px;
+}
+
+/* 移动端优化 */
+@media (max-width: 600px) {
+    .faq-article,
+    .guide-article {
+        padding: 22px 18px;
+        font-size: 14px;
+    }
+
+    .faq-article h3,
+    .guide-article h3 {
+        font-size: 16px;
+    }
+}
+
     </style>
 </head>
 
@@ -649,38 +732,38 @@
             <!-- 第一组卡片 -->
             <div class="carousel-track">
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="MN521 图1">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="MN521 图1" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="MN521 图2">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="MN521 图2" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="MN521 图3">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="MN521 图3" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="MN521 图4">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="MN521 图4" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1b0b307a-d9da-42ac-e7e6-44dcd9d28300/public" alt="MN521 图5">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1b0b307a-d9da-42ac-e7e6-44dcd9d28300/public" alt="MN521 图5" width="260" height="320">
                 </div>
             </div>
 
             <!-- 第二组卡片（复制一遍做无缝循环） -->
             <div class="carousel-track">
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="MN521 图1">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="MN521 图1" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="MN521 图2">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="MN521 图2" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="MN521 图3">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="MN521 图3" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="MN521 图4">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="MN521 图4" width="260" height="320">
                 </div>
                 <div class="carousel-card">
-                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1b0b307a-d9da-42ac-e7e6-44dcd9d28300/public" alt="MN521 图5">
+                    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1b0b307a-d9da-42ac-e7e6-44dcd9d28300/public" alt="MN521 图5" width="260" height="320">
                 </div>
             </div>
         </div>
@@ -770,9 +853,9 @@
     <div class="team-grid">
 
         <!-- 泰国 -->
-        <div class="team-card" onclick="window.location.href='https://t.me/JBmnXS'" style="cursor:pointer;">
+        <div class="team-card" onclick="window.location.href='https://t.me/JBjinhaiwan'" style="cursor:pointer;">
             <div class="team-img">
-                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/4f18f662-39a7-416f-ebf8-51aa5b8aae00/public" alt="新山泰国小姐">
+                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/4f18f662-39a7-416f-ebf8-51aa5b8aae00/public" alt="新山泰国小姐" width="900" height="1200">
             </div>
             <div class="team-info">
                 <span class="team-flag">🇹🇭</span>
@@ -784,7 +867,7 @@
         <!-- 越南 -->
         <div class="team-card" onclick="window.location.href='https://t.me/JBmnXS'" style="cursor:pointer;">
             <div class="team-img">
-                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/21f19ef8-fce0-4636-f3e0-277e92214d00/public" alt="新山越南小姐">
+                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/21f19ef8-fce0-4636-f3e0-277e92214d00/public" alt="新山越南小姐" width="900" height="1200">
             </div>
             <div class="team-info">
                 <span class="team-flag">🇻🇳</span>
@@ -794,9 +877,9 @@
         </div>
 
         <!-- 中国 -->
-        <div class="team-card" onclick="window.location.href='https://t.me/JBmnXS'" style="cursor:pointer;">
+        <div class="team-card" onclick="window.location.href='https://t.me/jbmnziyous'"style="cursor:pointer;">
             <div class="team-img">
-                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/5c8f32f3-9c9e-436c-46b6-03f416585e00/public" alt="新山中国小姐">
+                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/5c8f32f3-9c9e-436c-46b6-03f416585e00/public" alt="新山中国小姐" width="900" height="1200">
             </div>
             <div class="team-info">
                 <span class="team-flag">🇨🇳</span>
@@ -808,7 +891,7 @@
         <!-- 老挝 -->
         <div class="team-card" onclick="window.location.href='https://mn521.com/'" style="cursor:pointer;">
             <div class="team-img">
-                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d5ff36c6-1b09-405c-45bd-7aa828882600/public" alt="新山老挝小姐">
+                <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d5ff36c6-1b09-405c-45bd-7aa828882600/public" alt="新山老挝小姐" width="900" height="1200">
             </div>
             <div class="team-info">
                 <span class="team-flag">🇱🇦</span>
@@ -901,57 +984,141 @@
     </div>
 </section>
 
-<section class="container">
-    <h2 class="section-title">常见问题</h2>
+<section class="container" id="faq-article">
+  <h2 class="section-title">
+    新山下水、新山按摩、新山伴游完整指南（新加坡游客常见问题）
+  </h2>
 
-    <div class="faq-item">
-        <div class="faq-question">如何预约平台上的服务？</div>
-        <div class="faq-answer">
-            您可以先在首页浏览
-            <a href="https://mn-88.com/" class="text-link">核心服务亮点</a>
-            和
-            <a href="https://t.me/JBmnXS" class="text-link">国际技师团队</a>
-            栏目，根据个人喜好了解不同类型的服务与技师资料。确认后可通过站内留的
-            WhatsApp / Telegram 联系方式，自行与对方沟通时间、地点与细节，本平台仅提供信息展示，不参与任何线下约定与交易。
-        </div>
-    </div>
+  <article class="faq-article">
 
-    <div class="faq-item">
-        <div class="faq-question">从新加坡过去新山，大概需要多久？有哪些常见区域？</div>
-        <div class="faq-answer">
-            一般从新加坡出发，经关卡到新山市区，视通关与路况，
-            车程约 <strong>40–90 分钟</strong> 不等。常见活动区域包括
-            <a href="https://t.me/JBmnXS" class="text-link">KSL、金海湾、百万镇、坡底、富力公主湾</a>
-            等，新山被不少人视作“新加坡后花园”，适合当天往返的轻松行程。
-        </div>
-    </div>
+    <h3>从新加坡去新山，下水和按摩安全吗？</h3>
+    <p>
+      对于不少新加坡游客来说，新山（Johor Bahru）一直被视为“新加坡后花园”。
+      整体而言，只要选择常见活动区域、正常营业时段，并提前了解相关信息，
+      新山按摩与陪伴类服务的安全性是相对可控的。
+      建议避免深夜临时决定行程，也不要轻信要求提前大额转账的情况。
+    </p>
 
-    <div class="faq-item">
-        <div class="faq-question">平台上的信息是否真实？如何降低踩雷风险？</div>
-        <div class="faq-answer">
-            平台会尽量对提交的信息做基础筛选，但无法做到 100% 保证。
-            建议您优先参考页面上的口碑评价、资料完整度、更新频率，并通过
-            <a href="https://t.me/JBmnXS" class="text-link">技师团队</a> 与对方再次确认细节。
-            请勿提前大额转账，务必理性选择、自行判断风险。
-        </div>
-    </div>
+    <h3>新山按摩、新山伴游、新山自由身有什么区别？</h3>
+    <p>
+      新山按摩通常以放松理疗为主，适合时间较短、以舒缓为目的的行程；
+      新山伴游更偏向陪同、聊天、用餐或简单外出活动；
+      新山自由身一般指独立接待、不依附固定店面的个人服务者，
+      时间与方式相对灵活。不同类型适合不同需求，建议根据个人偏好选择。
+    </p>
 
-    <div class="faq-item">
-        <div class="faq-question">平台是否直接参与线下服务或交易？</div>
-        <div class="faq-answer">
-            MN521 为信息展示与联络引导平台，本身不直接提供任何线下服务，也不参与任何形式的金钱往来。
-            所有沟通与线下安排均由您与对方自行协商与负责。请遵守当地法律法规与平台使用条款，拒绝任何违法内容。
-        </div>
-    </div>
+    <h3>第一次去新山，推荐哪些区域？</h3>
+    <p>
+      对首次前往新山的游客来说，KSL 商圈、CIQ 关卡附近、富力公主湾等区域
+      交通相对便利，餐饮、住宿和活动信息也较集中。
+      这些区域路线清晰、选择较多，更适合新加坡游客当天往返或周末短途放松。
+    </p>
+
+    <h3>如何判断信息是否靠谱，降低踩雷风险？</h3>
+    <p>
+      建议优先查看资料是否更新频繁、照片是否清晰一致，
+      并通过聊天再次确认时间、地点和基本安排。
+      避免一次性支付高额订金，不要被“限时”“最后名额”等话术影响判断。
+      保持理性沟通，是降低风险的重要方式。
+    </p>
+
+    <h3>新加坡游客常见行程与时间建议</h3>
+    <p>
+      从新加坡市区出发，经关卡前往新山市区，通常需约 40–90 分钟，
+      具体时间取决于通关情况与路况。
+      许多游客选择上午过境、下午安排活动、傍晚或晚上返回，
+      行程相对轻松，也更容易把控时间。
+    </p>
+
+  </article>
 </section>
+<section class="container" id="about-guide">
+  <h2 class="section-title">
+    关于 MN521｜新加坡游客常用的新山信息导航平台
+  </h2>
+
+  <article class="guide-article">
+
+    <p>
+      MN521 是一个以信息整理与路线指引为主的平台，
+      面向经常往返 <strong>新加坡与新山（Johor Bahru）</strong> 的游客，
+      提供有关新山按摩、陪伴与休闲安排的参考内容。
+      平台并不参与任何线下交易，而是希望通过更清晰的分类与说明，
+      帮助用户在行程规划阶段减少不确定性。
+    </p>
+
+    <figure class="guide-image">
+      <img
+        src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear%20(2).png"
+        alt="MN521 新山信息平台首页展示"
+        width="1200"
+        height="400"
+        loading="lazy">
+      <figcaption>MN521 首页示意，用于信息浏览与行程参考</figcaption>
+    </figure>
+
+    <h3>为什么越来越多新加坡游客选择新山？</h3>
+    <p>
+      由于距离近、交通便利，新山常被称为“新加坡后花园”。
+      许多游客会选择周末或短假期前往新山放松，
+      包括按摩、餐饮、购物以及简单的陪同活动。
+      相比新加坡本地，新山整体节奏更慢、选择也更灵活，
+      因此吸引了不少短途访客。
+    </p>
+
+    <figure class="guide-image">
+      <img
+        src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public"
+        alt="新山按摩与休闲环境示意"
+        width="1200"
+        height="800"
+        loading="lazy">
+      <figcaption>新山常见休闲与按摩环境示意</figcaption>
+    </figure>
+
+    <h3>MN521 的信息是如何整理的？</h3>
+    <p>
+      平台上的内容主要来源于公开信息整理、用户反馈以及长期观察总结。
+      为了便于理解，MN521 会按区域（如 KSL、CIQ、富力公主湾等）、
+      类型（按摩、陪伴、自由身）进行分类说明。
+      用户可根据自己的时间、预算与行程，自行判断并联系相关对象。
+    </p>
+
+    <p>
+      需要特别说明的是，MN521 本身不提供任何形式的预约或收费服务，
+      所有沟通与安排均发生在用户与第三方之间。
+      平台存在的目的，是减少信息不对称，而不是替代个人判断。
+    </p>
+
+    <figure class="guide-image">
+      <img
+        src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public"
+        alt="新加坡前往新山的常见路线示意"
+        width="1200"
+        height="800"
+        loading="lazy">
+      <figcaption>新加坡往返新山的常见路线与区域分布</figcaption>
+    </figure>
+
+    <h3>给首次访问新山的游客一些建议</h3>
+    <p>
+      如果是第一次从新加坡前往新山，建议选择交通便利、
+      信息相对集中的区域，并在白天或正常营业时间内安排行程。
+      提前了解路线、确认时间细节、避免仓促决定，
+      都有助于让整体体验更加顺畅。
+    </p>
+
+    <p>
+      MN521 会持续更新相关信息，希望为新加坡与马来西亚之间的
+      短途访客提供更清晰的参考视角。
+    </p>
+
+  </article>
+</section>
+
 
 <footer class="footer" id="contact">
     <div class="container footer-grid">
-        <div>
-            <h4>关于 MN521</h4>
-            <p>MN521 专注新山按摩、新山伴游、新山自由身相关信息，覆盖新加坡后花园热门区域，为新加坡与马来西亚本地用户提供更高性价比的选择。</p>
-        </div>
-
         <div>
             <h4>联系我们</h4>
             <p>WhatsApp: +60 1668 46572</p>
